@@ -1,5 +1,10 @@
 @media (max-width: 1200px) {
   
+
+.nav__mobile-btn-wrapper .header__right-btn{
+  display: none;
+}
+
 .header {
   padding-bottom: 40px;
 }
@@ -20,8 +25,8 @@
   display: none;
  }
 
-    .nav {
-        position: fixed;
+.nav {
+      position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -48,13 +53,14 @@
         opacity: 1;
         visibility: visible;
     }
-    
+
     .header.active .header__logo {
         top: 20px;
         left: 20px;
         z-index: 1001;
     }
     
+
 .hero {
   padding-top: 18px;
   background-image: url(../images/duck960.png);
@@ -115,6 +121,40 @@ background-position-y: -41px;
 }
 
 @media (max-width: 760px) {
+
+  
+  /* Стили для кнопки в меню */
+  .nav__mobile-btn-container .header__right-btn {
+    width: 100%;
+    max-width: 228px;
+    margin: 0 auto;
+  }
+
+/* Добавляем новые стили для кнопки в мобильном меню */
+  .nav__mobile-btn-wrapper {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .nav.active .nav__mobile-btn-wrapper {
+    display: block;
+  }
+
+.nav {
+   flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 80px; 
+}
+
+.nav__mobile-btn-wrapper .header__right-btn {
+    display: block;
+    width: 100%;
+    max-width: 228px;
+    margin: 0 auto;
+  }
+
+
   .header__right-btn {
     display: none;
   }
@@ -138,6 +178,10 @@ background-position-y: -41px;
 .hero__img {
   left: 47%;
   top: 305px;
+}
+
+.nav.active .header__right-btn.active {
+  display: block;
 }
 
 }
