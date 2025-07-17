@@ -133,16 +133,17 @@
     </main>
     <div class="callback-modal" id="callbackModal">
   <div class="callback-modal__content">
-    <button class="callback-modal__close">&times;</button>
-    <h3 class="callback-modal__title">Обратный звонок</h3>
+    <button class="callback-modal__close"><svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.00002 5L8.53556 8.53553M1.46449 8.53553L5.00002 5L1.46449 8.53553ZM8.53556 1.46447L5.00002 5L8.53556 1.46447ZM5.00002 5L1.46449 1.46447L5.00002 5Z" stroke="#B9B9B9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </svg></button>
     <form class="callback-form">
       <div class="form-group">
-        <label for="name">Имя *</label>
-        <input type="text" id="name" placeholder="Введите ваше имя" required>
+        <label class="name" for="name">Имя</label>
+        <input class="form-input" type="text" id="name" placeholder="Введите ваше имя" required>
       </div>
       <div class="form-group">
-        <label for="phone">Телефон *</label>
-        <input type="tel" id="phone" placeholder="+7 000 000 00 00" required>
+        <label class="phone" for="phone">Телефон</label>
+        <input class="form-input" type="tel" id="phone" placeholder="+7 000 000 00 00" required>
       </div>
       <button type="submit" class="callback-form__submit">Отправить</button>
       <p class="callback-form__agreement">

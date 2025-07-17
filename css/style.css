@@ -90,8 +90,6 @@ body {
 
 .container {
   max-width: 1280px;
-  /* при установке ширины контейнера надо задать ширину + паддинги */
-  /* паддинги нужны чтобы верстка не прилипала к краям  */
   padding: 0 16px;
   margin: 0 auto;
 
@@ -180,7 +178,7 @@ transition: all .4s ease-in-out;
   transform: scaleX(0);
   transition: transform 0.4s ease;
 }
-/* Hover & focus states */
+
 .nav__item-link:hover,
 .nav__item-link:focus {
   color: #2581EB;
@@ -212,7 +210,6 @@ transition: all .4s ease-in-out;
   stroke: #0763CD;
 }
 
-
 .header__right-btn {
   border-radius: 8px;
 padding: 10px 10px;
@@ -236,7 +233,6 @@ transition: all .4s;
 .header__right-btn:active {
   background: #cc9500;
 }
-
 
 .nav__mobile-btn-wrapper {
   display: none;
@@ -346,7 +342,6 @@ background: var(--blue);
   transition: all .4s;
 }
 
-
 .hero__btn:hover,
 .hero__btn:focus-visible {
   background: #439fff;
@@ -387,7 +382,6 @@ transition: all .4s ease-in-out;
 .hero__bottom-item:hover .hero__bottom-item-link-svg path{
 fill: #2581eb;
 }
-
 
 .burger-btn {
     display: none;
@@ -488,12 +482,6 @@ background: var(--orange);
   cursor: pointer;
 }
 
-.callback-modal__title {
-  margin-bottom: 20px;
-  font-size: 24px;
-  font-weight: 600;
-}
-
 .form-group {
   margin-bottom: 20px;
 }
@@ -501,15 +489,23 @@ background: var(--orange);
 .form-group label {
   display: block;
   margin-bottom: 8px;
-  font-weight: 500;
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 137%;
+color: var(--black);
 }
 
 .form-group input {
   width: 100%;
   padding: 12px 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #faf8f8;
   border-radius: 8px;
-  font-size: 16px;
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+line-height: 157%;
+color: #a7a7a7;
 }
 
 .callback-form__submit {
@@ -527,16 +523,33 @@ background: var(--orange);
 
 .callback-form__agreement {
   margin-top: 15px;
-  font-size: 12px;
-  color: #666;
-  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: var(--black);
+  text-align: left;
+
 }
 
 .callback-form__agreement a {
-  color: var(--orange);
+  color: var(--blue);
   text-decoration: underline;
 }
 
+.name::after{
+  content: "*"; 
+  color: red;
+  margin-left: 4px;
+  font-size: 1.2em;
+}
+
+.phone::after {
+  content: "*"; 
+  color: red;
+  margin-left: 4px;
+  font-size: 1.2em;
+}
 
 
 

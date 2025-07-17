@@ -38,7 +38,6 @@
         align-items: center;
         transform: translateY(-100%);
         opacity: 0;
-        pointer-events: none;
         transition: all .4s ease-in-out;
     }
     
@@ -59,7 +58,6 @@
         left: 20px;
         z-index: 10001;
     }
-    
 
 .hero {
   padding-top: 18px;
@@ -122,15 +120,12 @@ background-position-y: -41px;
 
 @media (max-width: 760px) {
 
-  
-  /* Стили для кнопки в меню */
   .nav__mobile-btn-container .header__right-btn {
     width: 100%;
     max-width: 228px;
     margin: 0 auto;
   }
 
-/* Добавляем новые стили для кнопки в мобильном меню */
   .nav__mobile-btn-wrapper {
     display: none;
     margin-top: 20px;
@@ -153,7 +148,6 @@ background-position-y: -41px;
     max-width: 228px;
     margin: 0 auto;
   }
-
 
   .header__right-btn {
     display: none;
@@ -222,8 +216,6 @@ background-position-y: -41px;
   .hero__bottom-list {
   gap: 12px;
   }
-
-
 }
 
 @media (max-width:375px) {
